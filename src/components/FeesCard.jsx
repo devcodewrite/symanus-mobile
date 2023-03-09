@@ -1,12 +1,11 @@
 import { StyleSheet, Text, View } from "react-native";
-import AppNavigator from "./src/navigation/AppNavigator";
-import { SafeAreaProvider } from "react-native-safe-area-context";
 
-export default function App() {
+export default function FeesCard() {
   return (
-    <SafeAreaProvider>
-      <AppNavigator />
-    </SafeAreaProvider>
+    <View style={styles.container}>
+      <Text>Student Name</Text>
+      <Text>GHC 2000</Text>
+    </View>
   );
 }
 

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "SymanusMobile",
-    "slug": "SymanusMobile",
+    "name": "symanus-mobile",
+    "slug": "symanus-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
