@@ -1,14 +1,17 @@
-import { StyleSheet, Text, View } from "react-native";
+import { View } from "react-native";
+import { Image, Text } from "react-native-ui-lib";
 
 export default function PickAccount() {
-  return <View style={styles.container}></View>;
+  return (
+    <View>
+      <View>
+        <Image></Image>
+        <Text>Guardian</Text>
+      </View>
+      <View>
+        <Image></Image>
+        <Text>Teacher</Text>
+      </View>
+    </View>
+  );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
