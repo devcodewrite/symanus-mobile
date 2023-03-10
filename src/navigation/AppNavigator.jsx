@@ -2,6 +2,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
+import { Home, Splash } from "../pages";
 import { Home, PickAccount, QRCode, Splash, Student } from "../pages";
 
 const Stack = createStackNavigator();
