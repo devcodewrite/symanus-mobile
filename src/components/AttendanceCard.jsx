@@ -1,19 +1,11 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import { Text } from "react-native-ui-lib";
 
 export default function AttendanceCard() {
   return (
-    <View style={styles.container}>
+    <View>
       <Text>Student Name</Text>
       <Text>GHC 2000</Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});

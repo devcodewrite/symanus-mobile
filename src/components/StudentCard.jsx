@@ -1,21 +1,12 @@
-import { StyleSheet, Text, View } from "react-native";
+import { View } from "react-native";
+import { Text } from "react-native-ui-lib";
 
 export default function StudentCard() {
   return (
-    <View style={styles.container}>
+    <View>
       <Text>Student School Name</Text>
       <Text>Student Name</Text>
       <Text>Student Age</Text>
-      <StatusBar style="auto" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});

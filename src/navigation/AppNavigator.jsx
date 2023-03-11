@@ -2,18 +2,27 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import { Home, PickAccount, QRCode, Splash, Student } from "../pages";
+import {
+  Guardian,
+  Teacher,
+  PickAccount,
+  QRCode,
+  Splash,
+  Student,
+} from "../pages";
+import { SCREENS } from "../enums";
 
 const Stack = createStackNavigator();
 
 const AppNavigator = () => (
   <NavigationContainer>
     <Stack.Navigator headerMode="none">
-      <Stack.Screen name={"Home"} component={Home} />
-      <Stack.Screen name={"Splash"} component={Splash} />
-      <Stack.Screen name={"PickAccount"} component={PickAccount} />
-      <Stack.Screen name={"QRCode"} component={QRCode} />
-      <Stack.Screen name={"Student"} component={Student} />
+      <Stack.Screen name={SCREENS.Splash} component={Splash} />
+      <Stack.Screen name={SCREENS.Guardian} component={Guardian} />
+      <Stack.Screen name={SCREENS.Teacher} component={Teacher} />
+      <Stack.Screen name={SCREENS.PickAccount} component={PickAccount} />
+      <Stack.Screen name={SCREENS.QRCode} component={QRCode} />
+      <Stack.Screen name={SCREENS.Student} component={Student} />
     </Stack.Navigator>
   </NavigationContainer>
 );
