@@ -1,6 +1,5 @@
-import { Image, Text } from "react-native-ui-lib";
-import React, { useState, FC, useEffect } from "react";
-import { View, Text } from "react-native-ui-lib";
+import { Image, Text,View } from "react-native-ui-lib";
+import {React, useState, FC, useEffect} from "react";
 
 export default function QRCode() {
   return (

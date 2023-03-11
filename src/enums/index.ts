@@ -1,8 +1,8 @@
 export enum SCREENS {
-  Guardian = "Home",
+  Guardian = "Guardian",
   Teacher = "Teacher",
   PickAccount = "Questionaire",
-  QRCode = "Timeline",
-  Splash = "Notifications",
+  QRCode = "QRCode",
+  Splash = "Home",
   Student = "Template",
 }

@@ -16,8 +16,8 @@ const Stack = createStackNavigator();
 
 const AppNavigator = () => (
   <NavigationContainer>
-    <Stack.Navigator headerMode="none">
-      <Stack.Screen name={SCREENS.Splash} component={Splash} />
+    <Stack.Navigator screenOptions={{headerShown:false}}>
+     
       <Stack.Screen name={SCREENS.Guardian} component={Guardian} />
       <Stack.Screen name={SCREENS.Teacher} component={Teacher} />
       <Stack.Screen name={SCREENS.PickAccount} component={PickAccount} />

@@ -1,13 +1,18 @@
-import React, { useState, FC, useEffect } from "react";
-import { useNavigation } from "@react-navigation/native";
-import { View } from "react-native";
-import { Text } from "react-native-ui-lib";
+import { React, useState, FC, useEffect } from "react";
+import { useNavigation, StackActions } from "@react-navigation/native";
+import { Text, View } from "react-native";
 import { SCREENS } from "../enums";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { ActionBar } from "react-native-ui-lib";
+import { StyleSheet } from "react-native";
 
 export default function Guardian() {
   const nav = useNavigation();
   return (
-    <View>
+    <SafeAreaView style={styles.container}>
+      <View>
+        <Text>Home Page</Text>
+      </View>
       <ActionBar
         actions={[
           { label: "Symanus Mobile", onPress: () => console.log("clicked!") },
@@ -17,7 +22,15 @@ export default function Guardian() {
           },
         ]}
       />
-      <Text>Home Page</Text>
-    </View>
+    </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
