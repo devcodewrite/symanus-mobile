@@ -1,5 +1,5 @@
-import { View } from "react-native";
-import { Text } from "react-native-ui-lib";
+import React, { useState, FC, useEffect } from "react";
+import { View, Text } from "react-native-ui-lib";
 
 export default function Student() {
   return (
