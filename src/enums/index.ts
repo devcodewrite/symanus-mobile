@@ -5,4 +5,5 @@ export enum SCREENS {
   QRCode = "QRCode",
   Splash = "Home",
   Student = "Template",
+  Class = "Class",
 }

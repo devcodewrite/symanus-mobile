@@ -3,7 +3,7 @@ import { Pressable } from "react-native";
 import { Colors, Text, View } from "react-native-ui-lib";
 import { SCREENS } from "../enums";
 
-export default function StudentCard({ item, index }) {
+export default function StudentIdCard({ item, index }) {
   const nav = useNavigation();
   return (
     <Pressable

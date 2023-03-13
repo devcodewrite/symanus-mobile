@@ -1,7 +1,7 @@
-import { View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { Colors, Text } from "react-native-ui-lib";
 
-export default function AttendanceCard({ item, index }) {
+export default function StudentAttendanceCard({ item, index }) {
   return (
     <View
       width={"100%"}

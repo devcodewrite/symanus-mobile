@@ -1,28 +1,39 @@
 import React, { useState, FC, useEffect } from "react";
-import { useNavigation } from "@react-navigation/native";
+import { StackActions, useNavigation } from "@react-navigation/native";
 import { Pressable } from "react-native";
-import { View, Image, Text } from "react-native-ui-lib";
+import { View, Image, Text, Colors } from "react-native-ui-lib";
 import { SCREENS } from "../enums";
 
 export default function PickAccount() {
   const nav = useNavigation();
   return (
-    <View>
+    <View flex center>
       <Pressable
-        onPress={() => nav.dispatch(StackActions.replace(SCREENS.Guardian))}
+        style={{
+          marginBottom: 5,
+          height: 100,
+          width: 100,
+          borderRadius: 5,
+          borderColor: Colors.green20,
+          backgroundColor: Colors.white,
+          alignContent: "center",
+        }}
+        onPress={() => nav.navigate(SCREENS.Guardian)}
       >
-        <View>
-          <Image></Image>
-          <Text>Guardian</Text>
-        </View>
+        <Text center>Guardian</Text>
       </Pressable>
       <Pressable
-        onPress={() => nav.dispatch(StackActions.replace(SCREENS.Teacher))}
+        style={{
+          height: 100,
+          width: 100,
+          marginTop: 5,
+          borderRadius: 5,
+          borderColor: Colors.green20,
+          backgroundColor: Colors.white,
+        }}
+        onPress={() => nav.navigate(SCREENS.Teacher)}
       >
-        <View>
-          <Image></Image>
-          <Text>Teacher</Text>
-        </View>
+        <Text>Teacher</Text>
       </Pressable>
     </View>
   );
